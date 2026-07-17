@@ -1,97 +1,31 @@
-<!DOCTYPE html>
+indexhtml<!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dil Jaan 1400 Official</title>
+    <title>دل جان 1400 - ڈیش بورڈ</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f4f4f9; text-align: center; margin: 0; padding: 20px; }
-        .container {
-            background: white;
-            max-width: 600px;
-            margin: 20px auto;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        h1 { color: #2c3e50; margin-bottom: 20px; }
-        
-        /* یوٹیوب لائیو ویڈیو اسکرین */
-        .video-container {
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            overflow: hidden;
-            margin: 20px 0;
-            border-radius: 8px;
-            background: #000;
-        }
-        .video-container iframe {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-        }
-
-        /* 4 رنگ برنگے بٹن */
-        .btn-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .btn {
-            display: block;
-            padding: 12px 5px;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            font-size: 15px;
-            transition: opacity 0.3s;
-        }
-        .btn:hover { opacity: 0.8; }
-        .btn-yt { background-color: #FF0000; }
-        .btn-wa { background-color: #25D366; }
-        .btn-fb { background-color: #1877F2; }
-        .btn-tt { background-color: #010101; }
-
-        /* باقی لنکس کی پٹی */
-        .extra-links {
-            margin-top: 25px;
-            padding-top: 15px;
-            border-top: 1px solid #eee;
-            font-size: 16px;
-        }
-        .extra-links a {
-            color: #0066cc;
-            text-decoration: none;
-            margin: 0 8px;
-            display: inline-block;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; display: flex; background: #f4f7f6; }
+        .sidebar { width: 250px; background: #2c3e50; color: white; height: 100vh; padding: 20px; }
+        .main-content { flex: 1; padding: 40px; text-align: center; }
+        .link-box { display: block; padding: 15px; margin: 10px 0; background: #3498db; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
+        .link-box:hover { background: #2980b9; }
+        h2 { color: #2c3e50; }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Dil Jaan 1400 Official</h1>
-    <p>ہمارے فلاحی پروجیکٹ کی یوٹیوب لائیو اسٹریم اور سوشل میڈیا اکاؤنٹس۔</p>
-    
-    <div class="video-container">
-        <!-- یہاں YOUR_CHANNEL_ID کی جگہ اپنے چینل کی اصل ID درج کریں -->
-        <iframe src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID" frameborder="0" allowfullscreen></iframe>
-    </div>
+<div class="sidebar">
+    <h3>دل جان 1400</h3>
+    <a href="https://www.youtube.com/@arhammaqsood30-cell" class="link-box">یوٹیوب چینل</a>
+    <a href="https://wa.me/923000000000" class="link-box">واٹس ایپ نمبر</a>
+    <a href="https://facebook.com/yourprofile" class="link-box">فیس بک</a>
+    <a href="https://tiktok.com/@yourprofile" class="link-box">ٹک ٹاک</a>
+</div>
 
-    <div class="btn-grid">
-        <a href="#" class="btn btn-yt">یوٹیوب لائیو</a>
-        <a href="#" class="btn btn-wa">واٹس ایپ</a>
-        <a href="#" class="btn btn-fb">فیس بک پیج</a>
-        <a href="#" class="btn btn-tt">ٹک ٹاک</a>
-    </div>
-
-    <div class="extra-links">
-        <a href="#">انسٹاگرام</a> | 
-        <a href="#">تھریڈز</a> | 
-        <a href="#">ہمارا فارم</a>
-    </div>
+<div class="main-content">
+    <h2>خوش آمدید، دل جان 1400</h2>
+    <p>یہ آپ کا لائیو ویب سسٹم ہے جہاں سے آپ اپنی تمام سرگرمیاں کنٹرول کر سکتے ہیں۔</p>
+    <a href="https://arhammaqsood30-cell.github.io/del-jaan/" class="link-box" style="width: 200px; margin: auto;">لائیو ویب سائٹ وزٹ کریں</a>
 </div>
 
 </body>
