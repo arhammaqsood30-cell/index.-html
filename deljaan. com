@@ -1,4 +1,4 @@
-indexhtml<!DOCTYPE html>
+index.html<!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@ indexhtml<!DOCTYPE html>
     <style>
         body { font-family: Arial, sans-serif; margin: 0; display: flex; background: #f4f7f6; }
         .sidebar { width: 250px; background: #2c3e50; color: white; height: 100vh; padding: 20px; }
-        .main-content { : 1; padding: 40px; text-align: center; }
+        .main-content { flex: 1; }; padding: 40px; text-align: center; }
         .link-box { display: block; padding: 15px; margin: 10px 0; background: #3498db; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
         .link-box:hover { background: #2980b9; }
         h2 { color: #2c3e50; }
@@ -17,7 +17,7 @@ indexhtml<!DOCTYPE html>
 <div class="sidebar">
     <h3>دل جان 1400</h3>
     <a href="https://www.youtube.com/@arhammaqsood30-cell" class="link-box">یوٹیوب چینل</a>
-    <a href="https://wa.me/923000000000" class="link-box">واٹس ایپ نمبر</a>
+    <a href="https://wa.me/+923430450007" class="link-box">واٹس ایپ نمبر</a>
     <a href="https://facebook.com/yourprofile" class="link-box">فیس بک</a>
     <a href="https://tiktok.com/@yourprofile" class="link-box">ٹک ٹاک</a>
 </div>
