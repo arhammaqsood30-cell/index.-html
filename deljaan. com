@@ -1,32 +1,170 @@
-index.html<!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<!DOCTYPE html>
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>دل جان 1400 - ڈیش بورڈ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>दिल जान 1400 - Live Hub</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; display: flex; background: #f4f7f6; }
-        .sidebar { width: 250px; background: #2c3e50; color: white; height: 100vh; padding: 20px; }
-        .main-content { flex: 1; }; padding: 40px; text-align: center; }
-        .link-box { display: block; padding: 15px; margin: 10px 0; background: #3498db; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; }
-        .link-box:hover { background: #2980b9; }
-        h2 { color: #2c3e50; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        /* Live Badge */
+        .live-badge {
+            display: inline-flex;
+            align-items: center;
+            background: #ff0000;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+            animation: pulse 1.5s infinite;
+        }
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 8px;
+            background: linear-gradient(45deg, #ff8a00, #e52e71, #00c6ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p.subtitle {
+            font-size: 14px;
+            color: #cccccc;
+            margin-bottom: 25px;
+        }
+        /* Links & Buttons */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .btn-youtube {
+            background: linear-gradient(45deg, #FF0000, #CC0000);
+            color: white;
+        }
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            animation: glow-whatsapp 2s infinite;
+        }
+        @keyframes glow-whatsapp {
+            0% { box-shadow: 0 0 5px #25D366; }
+            50% { box-shadow: 0 0 20px #25D366; }
+            100% { box-shadow: 0 0 5px #25D366; }
+        }
+        .btn-link1 { background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045); color: white; }
+        .btn-link2 { background: linear-gradient(45deg, #00c6ff, #0072ff); color: white; }
+        .btn-link3 { background: linear-gradient(45deg, #f12711, #f5af19); color: white; }
+        .btn-link4 { background: linear-gradient(45deg, #11998e, #38ef7d); color: white; }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            opacity: 0.95;
+        }
+        .footer-note {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #888888;
+        }
     </style>
 </head>
 <body>
 
-<div class="sidebar">
-    <h3>دل جان 1400</h3>
-    <a href="https://www.youtube.com/@arhammaqsood30-cell" class="link-box">یوٹیوب چینل</a>
-    <a href="https://wa.me/+923430450007" class="link-box">واٹس ایپ نمبر</a>
-    <a href="https://facebook.com/yourprofile" class="link-box">فیس بک</a>
-    <a href="https://tiktok.com/@yourprofile" class="link-box">ٹک ٹاک</a>
-</div>
+    <div class="container">
+        <!-- YouTube Style Live Counter -->
+        <div class="live-badge">
+            <span class="live-dot"></span> LIVE • <span id="viewer-count">805</span> Active
+        </div>
 
-<div class="main-content">
-    <h2>خوش آمدید، دل جان 1400</h2>
-    <p>یہ آپ کا لائیو ویب سسٹم ہے جہاں سے آپ اپنی تمام سرگرمیاں کنٹرول کر سکتے ہیں۔</p>
-    <a href="https://arhammaqsood30-cell.github.io/del-jaan/" class="link-box" style="width: 200px; margin: auto;">لائیو ویب سائٹ وزٹ کریں</a>
-</div>
+        <h1>दिल जान 1400</h1>
+        <p class="subtitle">सभी खास लिंक्स और लाइव अपडेट्स एक ही जगह पर</p>
+
+        <!-- 6 Links & Buttons -->
+        <div class="links-container">
+            <!-- 1. YouTube Channel -->
+            <a href="https://youtube.com" target="_blank" class="btn btn-youtube">🔴 YouTube चैनल देखें</a>
+
+            <!-- 2. WhatsApp Number Button -->
+            <a href="https://wa.me/910000000000" target="_blank" class="btn btn-whatsapp">💬 WhatsApp पर जुड़ें (Chat Now)</a>
+
+            <!-- 3. Link 1 -->
+            <a href="#" target="_blank" class="btn btn-link1">✨ स्पेशल अपडेट्स (Link 1)</a>
+
+            <!-- 4. Link 2 -->
+            <a href="#" target="_blank" class="btn btn-link2">🚀 टेलीग्राम ग्रुप (Link 2)</a>
+
+            <!-- 5. Link 3 -->
+            <a href="#" target="_blank" class="btn btn-link3">🔥 नया वीडियो लिंक (Link 3)</a>
+
+            <!-- 6. Link 4 -->
+            <a href="#" target="_blank" class="btn btn-link4">⭐ कांटेक्ट / सपोर्ट (Link 4)</a>
+        </div>
+
+        <div class="footer-note">
+            © 2026 दिल जान 1400. All Rights Reserved.
+        </div>
+    </div>
+
+    <script>
+        // लाइव व्यूअर्स काउंट को थोड़ा नेचुरल फ्लक्चुएट करने के लिए (YouTube लाइव इफ़ेक्ट)
+        setInterval(() => {
+            const countElement = document.getElementById('viewer-count');
+            let currentCount = parseInt(countElement.innerText);
+            let change = Math.floor(Math.random() * 7) - 3; // -3 से +3 तक बदलाव
+            currentCount += change;
+            if(currentCount < 790) currentCount = 795;
+            countElement.innerText = currentCount;
+        }, 3000);
+    </script>
 
 </body>
 </html>
